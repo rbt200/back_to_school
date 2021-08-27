@@ -1,63 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Rotating Navigation</title>
-</head>
+  </head>
 
-<body>
-    <div class="container">
-        <div class="circle-container">
-            <div class="circle">
-                <button id="close">
-                    <i class="fas fa-times"></i>
-                </button>
-                <button id="open">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
+  <body>
+    <div class="container show-nav">
+      <div class="circle-container">
+        <div class="circle">
+          <button id="close">
+            <i class="fas fa-times"></i>
+          </button>
+          <button id="open">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-    
-        <div class="content">
-            <h1>Amazing Article</h1>
-            <small>Florin Pop</small>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos architecto magni fugit recusandae libero
-                laudantium eos quibusdam reprehenderit perspiciatis voluptatem praesentium, molestiae assumenda nihil fugiat
-                omnis, tempore voluptatibus consequuntur. A reprehenderit itaque aspernatur, eveniet rerum quam odio magni,
-                expedita error, repudiandae facilis vel. Officia omnis dignissimos sit corporis nisi repellendus aliquid
-                iure atque impedit fuga doloribus obcaecati quisquam alias sed est possimus amet eum aperiam placeat, et
-                culpa at nam! Deleniti repudiandae similique delectus cupiditate? Repellat reprehenderit eum in? Unde
-                eveniet vero obcaecati magni quasi ut nesciunt repellendus eos asperiores et eligendi non quisquam commodi
-                placeat, dolorem excepturi. Impedit, aliquam.</p>
-    
-            <h3>My dog</h3>
-            <img src="https://images.unsplash.com/photo-1526849875464-471c91f5ecae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80"
-                alt="nature">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quibusdam odio incidunt iusto? Recusandae,
-                reprehenderit laboriosam obcaecati non deleniti id quos qui. Consequatur, sapiente suscipit rerum culpa
-                minima eveniet nisi ab aperiam exercitationem recusandae autem, magnam, repellat harum quas. Voluptatem
-                architecto voluptates impedit aspernatur ducimus, vel exercitationem nam non eius, earum sunt laboriosam
-                ratione perspiciatis voluptatibus unde eaque quae? Velit, fugit deserunt voluptate nulla odit sint quia
-                alias officia mollitia cumque vitae! Neque, saepe veritatis!</p>
-        </div>
+      </div>
+
+      <div class="content">
+        <h1>Amazing Article</h1>
+        <small>Florin Pop</small>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+          architecto magni fugit recusandae libero laudantium eos quibusdam
+          reprehenderit perspiciatis voluptatem praesentium, molestiae assumenda
+          nihil fugiat omnis, tempore voluptatibus consequuntur. A reprehenderit
+          itaque aspernatur, eveniet rerum quam odio magni, expedita error,
+          repudiandae facilis vel. Officia omnis dignissimos sit corporis nisi
+          repellendus aliquid iure atque impedit fuga doloribus obcaecati
+          quisquam alias sed est possimus amet eum aperiam placeat, et culpa at
+          nam! Deleniti repudiandae similique delectus cupiditate? Repellat
+          reprehenderit eum in? Unde eveniet vero obcaecati magni quasi ut
+          nesciunt repellendus eos asperiores et eligendi non quisquam commodi
+          placeat, dolorem excepturi. Impedit, aliquam.
+        </p>
+
+        <h3>My dog</h3>
+        <img
+          src="https://images.unsplash.com/photo-1526849875464-471c91f5ecae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80"
+          alt="nature"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
+          quibusdam odio incidunt iusto? Recusandae, reprehenderit laboriosam
+          obcaecati non deleniti id quos qui. Consequatur, sapiente suscipit
+          rerum culpa minima eveniet nisi ab aperiam exercitationem recusandae
+          autem, magnam, repellat harum quas. Voluptatem architecto voluptates
+          impedit aspernatur ducimus, vel exercitationem nam non eius, earum
+          sunt laboriosam ratione perspiciatis voluptatibus unde eaque quae?
+          Velit, fugit deserunt voluptate nulla odit sint quia alias officia
+          mollitia cumque vitae! Neque, saepe veritatis!
+        </p>
+      </div>
     </div>
-    
+
     <nav>
-        <ul>
-            <li><i class="fas fa-home">HOME</i></li>
-            <li><i class="fas fa-user-alt">ABOUT</i></li>
-            <li><i class="fas fa-envelope">CONTACTS</i></li>
-        </ul>
+      <ul>
+        <li><i class="fas fa-home">HOME</i></li>
+        <li><i class="fas fa-user-alt">ABOUT</i></li>
+        <li><i class="fas fa-envelope">CONTACTS</i></li>
+      </ul>
     </nav>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
