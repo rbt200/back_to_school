@@ -11,8 +11,24 @@
   font-weight: 400;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 html {
   font-size: 62.5%; /* 1rem = 10px*/
+}
+
+.section-heading {
+  font-size: 5rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-bottom: 15rem;
+  border-bottom: 0.3rem solid #333;
+  text-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
 
 /* End of Reset and Common Styles */
@@ -28,56 +44,74 @@ html {
     ),
     url(images/bg.jpg) center no-repeat;
   background-size: cover;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .section-1-heading {
-    font-size: 6rem;
-    font-weight: 700;
-    color: #fff;
-    background-color: #e41c6f;
-    padding: 0 3rem;
-    margin-bottom: 5rem;
-    text-transform: uppercase;
-    letter-spacing: 1rem;
-    border-bottom: .3rem solid #fff;
-    text-shadow: 0.2rem .2rem 1rem #555;
-    transform: skew(-10deg);
+  font-size: 6rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #e41c6f;
+  padding: 0 3rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  border-bottom: 0.3rem solid #fff;
+  text-shadow: 0.2rem 0.2rem 1rem #555;
+  transform: skew(-10deg);
 }
 
 .person-img {
-    width: 25rem;
-    height: 25rem;
-    object-fit: cover;
-    border-radius: 50%;
-    border: .7rem dotted #e41c6f;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: .5rem;
-    opacity: 0.9;
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 0.7rem dotted #e41c6f;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.5rem;
+  opacity: 0.9;
 }
 
 .person-name {
-    font-size: 2rem;
-    color: #fff;
-    background-color: #e41c6f;
-    margin: 5rem 0;
-    padding: .5rem 3rem;
-    letter-spacing: .3rem;
-    transform: skew(-10deg);
+  font-size: 2rem;
+  color: #fff;
+  background-color: #e41c6f;
+  margin: 5rem 0;
+  padding: 0.5rem 3rem;
+  letter-spacing: 0.3rem;
+  transform: skew(-10deg);
 }
 
 .section-1-btn {
-    font-size: 1.7rem;
-    font-weight: 700;
-    color: #333;
-    background-color: #fff;
-    border: .3rem solid #333;
-    padding: .5rem 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #fff;
+  border: 0.3rem solid #333;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
 }
 
 /* End of Section 1*/
+
+/* Nabar */
+
+.navbar {
+  width: 100%;
+  height: 4rem;
+  background-color: #e41c6f;
+  box-shadow: 0.2rem 0.2rem 0.5rem #555;
+  position: absolute;
+}
+
+.navbar-link {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 3rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+/* End of Navbar */
