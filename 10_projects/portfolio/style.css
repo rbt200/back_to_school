@@ -112,6 +112,27 @@ html {
   margin: 0 3rem;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.navbar-link:hover {
+  color: #fff;
+}
+
+.navbar-link::before {
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  background-color: #fff;
+  position: absolute;
+  bottom: -0.3rem;
+  right: -15%;
+  transition: width 0.5s;
+}
+
+.navbar-link:hover::before {
+  width: 130%;
 }
 
 /* End of Navbar */
