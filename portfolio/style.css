@@ -1,0 +1,117 @@
+/* Common style */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%; /*1 rem = 10px*/
+}
+
+/* End of common style */
+
+/* Section-1 */
+
+.section-1 {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(78, 82, 82, 0.2), rgba(255, 255, 255, 0.3));
+  block-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__title {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: rgb(231, 122, 122);
+  padding: 0 0.5rem;
+  margin-bottom: 9rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  text-shadow: 0.3rem 0.3rem 1rem #632b42;
+}
+
+.header__img {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: #e77a7a;
+  border: 0.7rem dotted #e41c6f;
+  padding: 0.5rem;
+  opacity: 0.9;
+}
+
+.header__name {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #e77a7a;
+  margin: 5rem 0;
+  padding: 0.5rem 3rem;
+  letter-spacing: 0.3rem;
+}
+
+.header__btn {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #333;
+  border: 0.3rem solid #e77a7a;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 4rem;
+    background-color: #e77a7a;
+    box-shadow: 0.2rem 0.2rem 0.5rem #e25959;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__link {
+
+
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 3rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  position: relative;
+  transition: color 0.2s;
+}
+
+
+/* End of Section-1*/
+
+/* Media */
+
+@media (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+/* End of Media*/
