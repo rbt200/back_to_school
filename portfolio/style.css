@@ -91,16 +91,13 @@ html {
 }
 
 .navbar__link {
-
-
-  font-size: 1.7rem;
-  font-weight: 600;
-  color: #333;
-  margin: 0 3rem;
-  letter-spacing: 0.3rem;
-  text-transform: uppercase;
-  position: relative;
-  transition: color 0.2s;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 3rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    position: relative;
 }
 
 
