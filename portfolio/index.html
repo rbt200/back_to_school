@@ -11,10 +11,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Portfolio</title>
   </head>
 
@@ -22,7 +19,7 @@
     <!-- Section 1-->
     <section class="section-1">
       <header class="header section-1__header">
-        <h1 class="header__title">Web Developer</h1>
+        <h1 class="title header__title">Web Developer</h1>
         <img src="images/avatar.png" alt="John Smith" class="header__img" />
         <h3 class="header__name">John Smith</h3>
         <a href="#" class="header__btn">Projects</a>
@@ -38,7 +35,7 @@
 
     <!-- Section-2 -->
     <section class="section-2">
-      <h2 class="section-2__title">About ME</h2>
+      <h1 class="title section-2__title">About ME</h1>
       <div class="progress-bars">
         <div class="progress-bars__progress-bar">
           <p class="progress-bars__text">
@@ -216,18 +213,37 @@
 
     <!-- Section-4 -->
     <section class="section-4">
-      <h1 class="section-4__title">Contact Me</h1>
-        <form action="" class="contact-form">
-          <input type="text" class="contact-form__name" placeholder="Name">
-          <input type="email" class="contact-form__email" placeholder="email">
-          <textarea placeholder="Message" class="contact-form__message"></textarea>
-          <input type="submit" class="contact-form__submit" value="Submit">
-        </form>
+      <h1 class="title section-4__title">Contact Me</h1>
+      <form action="" class="contact-form">
+        <input type="text" class="contact-form__name" placeholder="Name" />
+        <input type="email" class="contact-form__email" placeholder="email" />
+        <textarea
+          placeholder="Message"
+          class="contact-form__message"
+        ></textarea>
+        <input type="submit" class="contact-form__submit" value="Submit" />
+      </form>
     </section>
     <!-- End Section-4 -->
 
     <!-- Section-5 -->
-    <section class="section-5"></section>
+    <footer class="section-5">
+      <div class="social-media">
+        <a href="" class="social-media__link">
+          <i class="social-media__icon fab fa-github-square"></i>
+        </a>
+        <a href="" class="social-media__link">
+          <i class="social-media__icon fab fa-youtube"></i>
+        </a>
+        <a href="" class="social-media__link">
+          <i class="social-media__icon fab fa-facebook-square"></i>
+        </a>
+        <a href="" class="social-media__link">
+          <i class="social-media__icon fab fa-instagram-square"></i>
+        </a>
+      </div>
+      <p class="social-media__copyright">rbt200 &copy; All rights reserved</p>
+    </footer>
     <!-- End Section-5 -->
     <script src="script.js"></script>
   </body>
