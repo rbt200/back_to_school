@@ -103,6 +103,12 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
 }
 
 .navbar__link {
@@ -113,6 +119,25 @@ html {
   letter-spacing: 0.3rem;
   text-transform: uppercase;
   position: relative;
+}
+
+.navbar__link:hover {
+  color: #fff;
+}
+
+.navbar__link::before {
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  background-color: #fff;
+  position: absolute;
+  bottom: -0.3rem;
+  right: -15%;
+  transition: width 0.5s;
+}
+
+.change.navbar__link::before {
+  width: 130%;
 }
 
 /* End of Section-1*/
