@@ -18,12 +18,17 @@
   font-weight: 400;
 }
 
+body {
+  overflow-x: hidden; /*hide horizontal scroll*/
+}
+
 h1 {
   font-family: "Roboto Slab", serif;
 }
 
 html {
   font-size: 62.5%; /*1 rem = 10px*/
+  scroll-behavior: smooth;
 }
 
 .title {
@@ -44,7 +49,7 @@ html {
 .section-1 {
   width: 100%;
   height: 100vh;
-  background-color: var(--morning_sky); 
+  background-color: var(--morning_sky);
   block-size: cover;
   display: flex;
   justify-content: center;
@@ -119,6 +124,11 @@ html {
   letter-spacing: 0.3rem;
   text-transform: uppercase;
   position: relative;
+  transition: color 0.5s;
+}
+
+.change.navbar__link {
+  color: #fff;
 }
 
 .navbar__link:hover {
@@ -140,6 +150,10 @@ html {
   width: 130%;
 }
 
+.navbar__link:hover::before {
+  width: 130%;
+}
+
 /* End of Section-1*/
 
 /* Section-2 */
@@ -148,7 +162,7 @@ html {
   width: 100%;
   height: 100vh;
   padding: 0 0 10 rem 0;
-  background-color: #fff; /*#7a9d96;#faf8f8;*/
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -193,7 +207,7 @@ html {
 }
 
 .progress-bars__percent-bar {
-  width: 70%;
+  width: 0;
   height: 100%;
   position: absolute;
   background-color: var(--mist);
@@ -278,7 +292,7 @@ html {
   background-color: #fff;
   box-shadow: 0.3rem 0.3rem 0.5rem #777;
   position: relative;
-  /*overflow: hidden;*/
+  overflow: hidden;
   transition: box-shadow 0.3s;
 }
 
@@ -286,8 +300,58 @@ html {
   box-shadow: 1rem 1rem 1rem #777;
 }
 
-.gallery_img {
+.gallery__project {
+  position: absolute;
+  top: -10rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  transition: top 0.3s;
+}
+
+.gallery__item:hover .gallery__project {
+  top: 5rem;
+  transition: top 0.3s 0.3s;
+}
+
+.gallery__project-name {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--cerulean);
+}
+
+.gallery__project-technologies {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--mist);
+}
+
+.gallery__img {
   width: 30rem;
+  transition: opacity 0.5s;
+}
+
+.gallery__item:hover .gallery__img {
+  opacity: 0.2;
+}
+
+.gallery__link {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--cerulean);
+  letter-spacing: 0.1rem;
+  border: 0.3rem solid var(--honey);
+  padding: 0 1rem;
+  background-color: #fff;
+  position: absolute;
+  bottom: -5rem;
+}
+
+.gallery__item:hover .gallery__link {
+  bottom: 5rem;
+  transition: bottom 0.3s 0.3s;
 }
 
 /* End of Section-3*/
@@ -322,7 +386,7 @@ html {
 .contact-form__submit {
   width: 100%;
   padding: 0.5rem;
-  margin: 0.5rem;  
+  margin: 0.5rem;
   font-size: 1.5rem;
   color: var(--cerulean);
   border: 0.2rem solid var(--honey);
@@ -349,8 +413,7 @@ html {
 .contact-form__submit:hover {
   cursor: pointer;
   box-shadow: 0.1rem 0.1rem 0.3rem var(--honey),
-    -0.1rem -0.1rem 0.3rem var(--honey),
-    -0.1rem 0.1rem 0.3rem var(--honey),
+    -0.1rem -0.1rem 0.3rem var(--honey), -0.1rem 0.1rem 0.3rem var(--honey),
     0.1rem -0.1rem 0.3rem var(--honey);
 }
 
@@ -385,7 +448,8 @@ html {
 }
 
 .social-media__link:hover {
-  box-shadow: 0.1rem 0.1rem 0.3rem var(--honey), -0.1rem -0.1rem 3rem var(--honey);
+  box-shadow: 0.1rem 0.1rem 0.3rem var(--honey),
+    -0.1rem -0.1rem 3rem var(--honey);
 }
 
 .social-media__icon {
@@ -394,7 +458,7 @@ html {
 }
 
 .social-media__copyright {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 2rem;
   font-weight: 300;
