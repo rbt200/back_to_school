@@ -11,7 +11,9 @@ sounds.forEach((sound) => {
 
   btn.addEventListener("click", () => {
     stopSounds();
-    document.getElementById(sound).play();
+    const current = document.getElementById(sound);
+
+    current.play();
   });
 
   stopBtn.addEventListener("click", () => {
