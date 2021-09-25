@@ -5,84 +5,106 @@
 }
 
 body {
-    background-color: steelblue;
-    color: #fff;
-    font-family: 'Muli', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+  background-color: steelblue;
+  color: #fff;
+  font-family: "Muli", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
 }
 
 .login-container {
-    background-color: rgba(0,0,0, 0.4);
-    padding: 20px 40px;
-    border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  border-radius: 5px;
 }
 
 .login-container__title {
-    text-align: center;
-    margin-bottom: 30px;;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .login-form__link-register {
-    text-decoration: none;
-    color: lightblue;
+  text-decoration: none;
+  color: lightblue;
 }
 
 .login-form__div-email,
 .login-form__div-password {
-    margin: 20px 0 40px;
+  margin: 20px 0 40px;
+  position: relative;
 }
 
 .login-form {
-    width: 300px;
-    position: relative;
+  width: 300px;
+  position: relative;
 }
 
 .login-form__input-email,
 .login-form__input-password {
-    background-color: transparent;
-    border: 0;
-    border-bottom: 2px #fff solid;
-    display: block;
-    width: 100%;
-    padding: 15px 0;
-    font-size: 18px;
-    color: #fff;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
 }
 
 .login-form__input-email:focus,
 .login-form__input-password:focus,
 .login-form__input-email:valid,
 .login-form__input-password:valid {
-    outline: 0;
+  outline: 0;
+  border-bottom-color: lightblue;
 }
 
 .login-form__button-submit {
-    cursor: pointer;
-    display: inline-block;
-    width: 100%;
-    background: lightblue;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background: lightblue;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .login-form__button-submit:focus {
-    outline: none;
+  outline: none;
 }
 
 .login-form__button-submit:active {
-    transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .login-form__par-register {
-    margin-top: 30px;
+  margin-top: 30px;
+}
+
+.login-form__label-email,
+.login-form__label-password {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.login-form__letter {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.login-form input:focus  + label span,
+.login-form input:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
 }
