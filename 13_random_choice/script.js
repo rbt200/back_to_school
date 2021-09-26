@@ -8,7 +8,7 @@ textarea.addEventListener("keyup", (event) => {
 
   if (event.key === "Enter" && event.target.value.trim() !== "") {
     setTimeout(() => {
-      event.target.value = "dfdfd";
+      event.target.value = "";
     }, 10);
 
     randomSelect();
