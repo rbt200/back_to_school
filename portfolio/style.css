@@ -330,6 +330,7 @@ html {
 
 .gallery__img {
   width: 30rem;
+  height: 240px;
   transition: opacity 0.5s;
 }
 
@@ -352,6 +353,7 @@ html {
 .gallery__item:hover .gallery__link {
   bottom: 5rem;
   transition: bottom 0.3s 0.3s;
+  cursor: pointer;
 }
 
 /* End of Section-3*/
